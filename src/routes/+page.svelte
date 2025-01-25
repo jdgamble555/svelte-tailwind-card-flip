@@ -21,18 +21,18 @@
 >
   <div
     class={cn(
-      "relative h-full w-full transition duration-500 [transform-style:preserve-3d]",
+      "relative size-full transition duration-500 [transform-style:preserve-3d]",
       card.showBack && "[transform:rotateY(180deg)]"
     )}
   >
     <div
-      class={cn("absolute inset-0 h-full w-full [backface-visibility:hidden]")}
+      class={cn("absolute inset-0 size-full [backface-visibility:hidden]")}
     >
       <Front />
     </div>
     <div
       class={cn(
-        "absolute inset-0 h-full w-full [backface-visibility:hidden] [transform:rotateY(180deg)]"
+        "absolute inset-0 size-full [backface-visibility:hidden] [transform:rotateY(180deg)]"
       )}
     >
       <Back />

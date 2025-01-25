@@ -1,5 +1,5 @@
 <div
-  class="flex h-full w-full flex-col items-center rounded-xl justify-center bg-emerald-700 text-white"
+	class="flex size-full flex-col items-center justify-center rounded-xl bg-emerald-700 text-white"
 >
-  Back
+	Back
 </div>
