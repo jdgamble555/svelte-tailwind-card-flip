@@ -1,6 +1,7 @@
 <script lang="ts">
   import Back from "$lib/back.svelte";
   import Front from "$lib/front.svelte";
+  import { useKey } from "$lib/use-key";
   import { cn } from "$lib/utils";
 
   const card = $state({
@@ -9,12 +10,14 @@
       this.showBack = !this.showBack;
     },
   });
+
+  useKey(" ", () => card.flip());
 </script>
 
 <button
   type="button"
   onclick={() => card.flip()}
-  class="size-96 [perspective:100rem]"
+  class="size-96 [perspective:100rem] outline-none"
 >
   <div
     class={cn(
