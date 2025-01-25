@@ -17,7 +17,7 @@
 <button type="button" onclick={() => card.flip()} class="size-96 outline-none [perspective:50rem]">
 	<div
 		class={cn(
-			'relative size-full transition duration-500 [transform-style:preserve-3d]',
+			'relative size-full transition duration-1000 [transform-style:preserve-3d]',
 			card.showBack && '[transform:rotateY(180deg)]'
 		)}
 	>
